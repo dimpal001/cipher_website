@@ -2,13 +2,18 @@ import Card from '../Components/Card'
 import Img1 from '../assets/bg1.svg'
 import Img2 from '../assets/bg2.svg'
 import Logo from '../assets/logo.svg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <main className='container mx-auto'>
       {/* hero section */}
-      <section className='w-full relative z-10 min-h-screen max-md:px-3 text-center max-md:text-4xl text-7xl font-extrabold flex justify-center items-center'>
-        <div className='pt-28'>
+      <section className='w-full relative z-10 max-md:flex-col min-h-screen max-md:px-3 max-md:text-center max-md:text-4xl text-7xl font-extrabold flex justify-around items-center'>
+        <div className='max-md:pt-52 pt-28'>
           <div className='relative z-20'>
             <p className='font-extralight animate__rubberBand animate__animated'>
               Explore IT Excellence
@@ -44,10 +49,13 @@ const Home = () => {
           <div className='absolute bottom-[100px] right-[200px] bg-white w-[50px] h-[50px] blur-[100px] rounded-full filter' />
           <div className='absolute bottom-[100px] bg-gray-400 w-[90px] h-[90px] blur-[200px] rounded-full filter' />
         </div>
+        <div className='pt-28 relative max-md:pb-28 z-40'>
+          <Swipper />
+        </div>
       </section>
 
       {/* About Section  */}
-      <div id='about' className='mb-16' />
+      <div id='about' className='mb-16 max-md:mb-24' />
       <section className='w-full min-h-screen pb-5 max-md:px-3 flex flex-col justify-center'>
         <p className='text-5xl max-md:text-4xl text-center pb-5 font-bold bg-gradient-to-r from-first to-second text-transparent bg-clip-text'>
           Discover Cipher&apos;s Essence
@@ -61,7 +69,7 @@ const Home = () => {
         </p>
         <div className='gap-10 flex justify-between max-md:flex-col items-center'>
           {aboutCipherArray.map((item, index) => (
-            <div key={index}>
+            <div data-aos='fade-up' key={index}>
               <Card img={item.img} title={item.title} desc={item.desc} />
             </div>
           ))}
@@ -70,7 +78,10 @@ const Home = () => {
 
       {/* Event Section  */}
       <span id='events' />
-      <section className='w-full relative min-h-screen max-md:mt-24 pb-5 max-md:px-3 flex flex-col justify-center'>
+      <section
+        data-aos='fade-up'
+        className='w-full relative min-h-screen max-md:mt-24 pb-5 max-md:px-3 flex flex-col justify-center'
+      >
         <div className='relative z-20'>
           <p className='text-5xl max-md:text-4xl text-center pb-5 font-bold bg-gradient-to-r from-first to-second text-transparent bg-clip-text'>
             Cipher&apos;s Exciting Events
@@ -88,17 +99,32 @@ const Home = () => {
         />
         <div className='gap-10 mt-14 grid lg:grid-cols-4 max-md:grid-cols-2'>
           {competitionsArray.map((item, index) => (
-            <div key={index}>
+            <div data-aos='fade-up' key={index}>
               <CompetitionCard img={item.img} title={item.title} />
             </div>
           ))}
+          <div id='gallery' />
         </div>
+      </section>
+
+      {/* Gallery Section  */}
+      <section data-aos='fade-up' className='pb-20'>
+        <p className='text-5xl max-md:text-4xl text-center pb-14 font-bold bg-gradient-to-r from-first to-second text-transparent bg-clip-text'>
+          Our Activities <br className='lg:hidden' /> Gallery
+        </p>
+        <Swipper2 />
       </section>
 
       {/* Get in touch  */}
       <span id='contact' />
-      <section className='w-full relative min-h-screen max-md:px-3 flex flex-col justify-center'>
-        <div className='relative z-20 bg-red-300 bg-opacity-10 rounded-3xl max-md:p-7 p-12'>
+      <section
+        data-aos='fade-up'
+        className='w-full relative min-h-screen max-md:px-3 flex flex-col justify-center'
+      >
+        <div
+          style={{ backgroundColor: 'rgba(103, 97, 237, 0.1)' }}
+          className='relative z-20 rounded-3xl max-md:p-7 p-12'
+        >
           <div className='flex max-md:flex-col gap-10'>
             <div className='lg:w-1/2 flex max-md:gap-1 gap-4 flex-col text-gray-300 mt-10'>
               <p className='text-5xl max-md:text-center max-md:text-4xl pb-5 font-extrabold text-gray-300'>
@@ -117,7 +143,7 @@ const Home = () => {
                 <p>SOT, NEHU, Shillong</p>
               </div>
             </div>
-            <div className='lg:w-1/2'>
+            <div data-aos='fade-up' className='lg:w-1/2'>
               <ContactForm />
             </div>
           </div>
@@ -145,6 +171,9 @@ import CImg3 from '../assets/c3.svg'
 import CImg4 from '../assets/c4.svg'
 import ContactForm from '../Components/ContactForm'
 import { Link } from 'react-router-dom'
+import Swipper from '../Components/Swipper'
+import Swipper2 from '../Components/Swipper2'
+import { useEffect } from 'react'
 
 const competitionsArray = [
   {

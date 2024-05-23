@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Card = ({ title, desc, img }) => {
   const navigate = useNavigate()
@@ -24,13 +26,20 @@ const Card = ({ title, desc, img }) => {
   }
 
   useEffect(() => {
+    AOS.init()
+
     if (location.state && location.state.scrollTo) {
       scrollToSection(location.state.scrollTo)
     }
   }, [location])
+
   return (
     <div>
-      <div className='p-10 group hover:border hover:border-first border border-transparent transition-all duration-500 min-h-[370px] flex flex-col justify-between bg-transparent text-gray-200 bg-pink-800 border-gray-300 rounded-xl bg-opacity-10'>
+      <div
+        data-aos='fade-up'
+        className='p-10 group hover:border hover:border-first border border-transparent transition-all duration-500 min-h-[370px] flex flex-col justify-between text-gray-200 border-gray-300 rounded-xl'
+        style={{ backgroundColor: 'rgba(103, 97, 237, 0.1)' }}
+      >
         <div className='flex justify-center'>
           <img
             src={img}
@@ -42,8 +51,7 @@ const Card = ({ title, desc, img }) => {
         <p className='text-center text-sm'>{desc}</p>
         <button
           onClick={() => handleNavigation('contact')}
-          className='p-1 group-hover:tracking-wider transition-all duration-300 w-full py-[7px] rounded-lg bg-gradient-to-r mt-5
-         from-first to-second'
+          className='p-1 hover:tracking-wider transition-all duration-300 w-full py-[7px] rounded-lg bg-gradient-to-r mt-5 from-first to-second'
         >
           Contact us
         </button>

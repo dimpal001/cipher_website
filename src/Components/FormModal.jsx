@@ -37,7 +37,7 @@ const FormModal = ({ isOpen, onClose }) => {
       {isOpen && (
         <div className='fixed inset-0 z-50 flex items-center justify-center'>
           <div className='fixed inset-0 bg-black opacity-50'></div>
-          <div className='relative animate__animated animate__zoomIn animate__faster bg-slate-800 text-white rounded-xl lg:w-[600px] w-96 p-6'>
+          <div className='relative animate__animated animate__zoomIn animate__faster bg-slate-800 text-white rounded-xl lg:w-[500px] w-96 p-6'>
             <button
               className='absolute top-0 right-0 m-2 p-2 text-gray-500 hover:text-gray-700'
               onClick={onClose}
@@ -62,10 +62,10 @@ const FormModal = ({ isOpen, onClose }) => {
                 <div className='flex justify-center'>
                   <img src={Logo} className='w-[150px]' alt='' />
                 </div>
-                <p className='text-center text-2xl'>
+                {/* <p className='text-center text-2xl'>
                   Fill the form to join Cipher
-                </p>
-                <form onSubmit={handleSubmit}>
+                </p> */}
+                {/* <form onSubmit={handleSubmit}>
                   <input
                     type='text'
                     name='Full_Name'
@@ -118,7 +118,18 @@ const FormModal = ({ isOpen, onClose }) => {
                       SUBMIT
                     </button>
                   )}
-                </form>
+                </form> */}
+                <div>
+                  <p className='text-lg py-5'>
+                    Thank you for your interest in <strong>Cipher</strong>. Our
+                    registration period has ended. We will begin accepting new
+                    registrations again in <strong>August 2024</strong>.
+                  </p>
+                  <p className='text-lg py-5'>
+                    We appreciate your visit and look forward to seeing you in
+                    the future!
+                  </p>
+                </div>
                 {isSent && (
                   <p className='mt-4 text-lg text-green-600'>
                     Your application has been submitted successfully! We will

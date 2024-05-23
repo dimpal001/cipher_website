@@ -135,26 +135,32 @@ const NavItems = ({ closeMenu, onModalOpen }) => {
     <div className='flex max-md:flex-col text-lg lg:items-center max-md:gap-3 gap-7'>
       <div
         onClick={() => handleNavigation('about')}
-        className='hover:text-second cursor-pointer transition-all duration-300'
+        className='hover:text-second hover:tracking-wider cursor-pointer transition-all duration-300'
       >
         About
       </div>
       <div
         onClick={() => handleNavigation('events')}
-        className='hover:text-second cursor-pointer transition-all duration-300'
+        className='hover:text-second hover:tracking-wider cursor-pointer transition-all duration-300'
       >
         Events
+      </div>
+      <div
+        onClick={() => handleNavigation('gallery')}
+        className='hover:text-second hover:tracking-wider cursor-pointer transition-all duration-300'
+      >
+        Gallery
       </div>
       <Link
         onClick={closeMenu}
         to={'/committee'}
-        className='hover:text-second cursor-pointer transition-all duration-300'
+        className='hover:text-second hover:tracking-wider cursor-pointer transition-all duration-300'
       >
         Committee
       </Link>
       <div
         onClick={() => handleNavigation('contact')}
-        className='hover:text-second cursor-pointer transition-all duration-300'
+        className='hover:text-second hover:tracking-wider cursor-pointer transition-all duration-300'
       >
         Contact
       </div>

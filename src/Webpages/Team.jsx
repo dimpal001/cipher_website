@@ -47,15 +47,16 @@ const Card = ({ name, position, department }) => {
 
 const Committee = [
   {
-    name: 'Dr. Sufal Das',
-    position: 'Teacher in-charge',
-    department: 'Ass. Professor, IT Dept.',
-  },
-  {
     name: 'Prof. Debdatta Kandar',
     position: 'Patron',
     department: 'HOD, IT Dept.',
   },
+  {
+    name: 'Dr. Sufal Das',
+    position: 'Teacher in-charge',
+    department: 'Ass. Professor, IT Dept.',
+  },
+
   {
     name: 'Priyanshu Raj',
     position: 'General Secretary',
