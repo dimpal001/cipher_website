@@ -9,7 +9,7 @@ const Team = () => {
   }, [])
 
   return (
-    <div className='w-screen pt-32 pb-20 max-md:pb-14 max-md:pt-32 max-md:p-5 container m-auto min-h-screen'>
+    <div className='w-screen pb-20 max-md:pb-14 max-md:p-5 container m-auto min-h-screen'>
       <div className='h-[300px] flex justify-center items-center'>
         <p className='text-5xl animate__fadeInUp animate__animated max-md:text-4xl text-center pb-5 font-bold bg-gradient-to-r from-first to-second text-transparent bg-clip-text'>
           Leadership Team Overview

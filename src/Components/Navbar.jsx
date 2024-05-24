@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOepn] = useState(false)
 
   return (
-    <div className='pt-5 fixed z-30 top-0 right-0 left-0'>
+    <div className='pt-5 z-30 top-0 right-0 left-0'>
       <div className='w-[90%] rounded-lg bg-white bg-opacity-5 items-center backdrop-blur-xl mx-auto p-2 px-4 flex justify-between'>
         <div>
           <Link to={'/'}>

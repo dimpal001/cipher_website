@@ -1,9 +1,10 @@
 import Img from '../assets/poster.svg'
 import sq1 from '../assets/Program/sq1.jpeg'
+import Result from '../assets/result.svg'
 
 const CipherDecipherChallenge = () => {
   return (
-    <div className='min-h-screen w-screen pt-28 text-gray-300 md:pt-32 lg:pt-28 flex flex-col items-center p-4 md:p-10'>
+    <div className='min-h-screen w-screen  text-gray-300 flex flex-col items-center p-4'>
       <Poster />
       {/* <ResultDeclaration /> */}
     </div>
@@ -68,29 +69,23 @@ const Poster = () => {
 
 const ResultDeclaration = () => {
   return (
-    <div className='shadow-lg animate__animated animate__fadeInUp rounded-lg overflow-hidden mt-10 w-full max-w-5xl mx-auto'>
-      <div className='text-center py-4'>
-        <h2 className='text-4xl max-md:text-3xl font-bold text-green-500 '>
-          Winner Announcement
-        </h2>
+    <div className='max-w-3xl animate__animated animate__fadeInUp w-full border border-first shadow-lg rounded-lg overflow-hidden'>
+      <div className='bg-first text-center py-2'>
+        <div className='flex justify-center'>
+          <img
+            loading='lazy'
+            src={Result}
+            alt=''
+            className='w-[180px] lg:w-[250px] md:w-[550px]'
+          />
+        </div>
       </div>
-      <div className='p-3 grid max-md:grid-cols-1 grid-cols-2 gap-5 w-full md:p-10'>
-        <img
-          loading='lazy'
-          src={sq1}
-          alt={`picture`}
-          className='mx-auto border rounded-lg mb-4'
-        />
-        <img
-          src={sq1}
-          alt={`picture`}
-          className='mx-auto border rounded-lg mb-4'
-        />
-        <img
-          src={sq1}
-          alt={`picture`}
-          className='mx-auto border rounded-lg mb-4'
-        />
+      <div className='p-6 lg:p-16 md:p-10'>
+        <img src={sq1} alt='' />
+        <div className='my-10 h-[1px] bg-first' />
+        <img src={sq1} alt='' />
+        <div className='my-10 h-[1px] bg-first' />
+        <img src={sq1} alt='' />
       </div>
     </div>
   )

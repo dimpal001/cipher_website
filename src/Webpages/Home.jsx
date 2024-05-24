@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <main className='container mx-auto'>
       {/* hero section */}
-      <section className='w-full relative z-10 max-lg:flex-col min-h-screen max-md:px-3 max-lg:text-center max-md:text-4xl text-7xl font-extrabold flex justify-around items-center'>
-        <div className='max-lg:pt-52 pt-28'>
+      <section className='w-full lg:-mt-24 max-lg:flex-col min-h-screen max-md:px-3 max-lg:text-center max-md:text-4xl text-7xl font-extrabold flex justify-around items-center'>
+        <div className='max-lg:pt-32 lg:pt-24'>
           <div className='relative z-20'>
             <p className='font-extralight animate__rubberBand animate__animated'>
               Explore IT Excellence
@@ -38,11 +38,17 @@ const Home = () => {
               <button className='p-3 lg:py-4 px-6 max-md:mt-14 bg-gradient-to-r from-first to-blue-950 text-lg font-semibold rounded-full'>
                 CIPHER-DECIPHER Challenge
               </button>
+              {/* <button
+                type='button'
+                className='text-white max-md:mt-5 transition-all duration-500 rounded-full bg-gradient-to-r p-3 lg:py-4 px-6 from-purple-600 to-yellow-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-semibold text-lg text-center me-2 mb-2'
+              >
+                CIPHER-DECIPHER Result
+              </button> */}
             </Link>
           </div>
           <img
             src={Img1}
-            className='absolute opacity-20 max-md:opacity-70 inset-0 z-10 max-md:top-[300px] top-[110px]'
+            className='absolute opacity-20 max-md:opacity-70 inset-0 z-10 max-md:top-[130px] top-[110px]'
             alt=''
           />
           <div className='absolute top-[100px] left-[200px] bg-gray-300 w-[90px] h-[90px] blur-[200px] rounded-full filter' />
