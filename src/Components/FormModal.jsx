@@ -37,7 +37,7 @@ const FormModal = ({ isOpen, onClose }) => {
       {isOpen && (
         <div className='fixed inset-0 z-50 flex items-center justify-center'>
           <div className='fixed inset-0 bg-black opacity-50'></div>
-          <div className='relative animate__animated animate__zoomIn animate__faster bg-slate-800 text-white rounded-xl lg:w-[500px] w-96 p-6'>
+          <div className='relative animate__animated animate__zoomIn animate__faster bg-slate-800 text-white rounded-xl lg:w-[500px] w-[360px] p-6'>
             <button
               className='absolute top-0 right-0 m-2 p-2 text-gray-500 hover:text-gray-700'
               onClick={onClose}

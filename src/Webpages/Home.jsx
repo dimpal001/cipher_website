@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <main className='container mx-auto'>
       {/* hero section */}
-      <section className='w-full relative z-10 max-md:flex-col min-h-screen max-md:px-3 max-md:text-center max-md:text-4xl text-7xl font-extrabold flex justify-around items-center'>
-        <div className='max-md:pt-52 pt-28'>
+      <section className='w-full relative z-10 max-lg:flex-col min-h-screen max-md:px-3 max-lg:text-center max-md:text-4xl text-7xl font-extrabold flex justify-around items-center'>
+        <div className='max-lg:pt-52 pt-28'>
           <div className='relative z-20'>
             <p className='font-extralight animate__rubberBand animate__animated'>
               Explore IT Excellence
@@ -34,8 +34,8 @@ const Home = () => {
               enthusiasts. <br className='max-md:hidden' /> Stay updated with
               our latest events and news.
             </p>
-            <Link to={'/registration'}>
-              <button className='p-3 px-6 max-md:mt-14 bg-first text-lg font-semibold rounded-full'>
+            <Link to={'/cipher-decipher'}>
+              <button className='p-3 lg:py-4 px-6 max-md:mt-14 bg-gradient-to-r from-first to-blue-950 text-lg font-semibold rounded-full'>
                 CIPHER-DECIPHER Challenge
               </button>
             </Link>
@@ -67,7 +67,7 @@ const Home = () => {
           enhance their technical skills, share knowledge, and work on exciting
           projects.
         </p>
-        <div className='gap-10 flex justify-between max-md:flex-col items-center'>
+        <div className='gap-10 max-md:p-2 flex justify-between max-md:flex-col items-center'>
           {aboutCipherArray.map((item, index) => (
             <div data-aos='fade-up' key={index}>
               <Card img={item.img} title={item.title} desc={item.desc} />
@@ -97,7 +97,7 @@ const Home = () => {
           className='absolute left-[500px] max-md:left-7 z-10 opacity-20 max-md:top-12 top-[130px] w-[350px]'
           alt=''
         />
-        <div className='gap-10 mt-14 grid lg:grid-cols-4 max-md:grid-cols-2'>
+        <div className='gap-10 mt-14 grid lg:grid-cols-4 max-lg:grid-cols-2'>
           {competitionsArray.map((item, index) => (
             <div data-aos='fade-up' key={index}>
               <CompetitionCard img={item.img} title={item.title} />

@@ -37,7 +37,7 @@ const Card = ({ title, desc, img }) => {
     <div>
       <div
         data-aos='fade-up'
-        className='p-10 group hover:border hover:border-first border border-transparent transition-all duration-500 min-h-[370px] flex flex-col justify-between text-gray-200 border-gray-300 rounded-xl'
+        className='p-10 lg:p-10 md:p-3 group hover:border hover:border-first border border-transparent transition-all duration-500 min-h-[390px] flex flex-col justify-between text-gray-200 border-gray-300 rounded-xl'
         style={{ backgroundColor: 'rgba(103, 97, 237, 0.1)' }}
       >
         <div className='flex justify-center'>
@@ -47,7 +47,7 @@ const Card = ({ title, desc, img }) => {
             alt=''
           />
         </div>
-        <p className='pb-5 text-xl text-center font-bold'>{title}</p>
+        <p className='py-5 text-xl text-center font-bold'>{title}</p>
         <p className='text-center text-sm'>{desc}</p>
         <button
           onClick={() => handleNavigation('contact')}

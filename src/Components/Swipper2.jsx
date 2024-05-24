@@ -29,7 +29,7 @@ export default function Swipper2() {
         }}
         navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
-        className='mySwiper opacity-80 max-md:w-[366px] max-md:h-full w-[1000px]'
+        className='mySwiper opacity-80 max-md:w-[366px] md:w-[750px] max-md:h-full lg:w-[1000px]'
       >
         <SwiperSlide>
           <img src={p1} alt='' />
