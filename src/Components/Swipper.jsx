@@ -8,6 +8,7 @@ import sq1 from '../assets/Program/sq1.jpeg'
 import sq2 from '../assets/Program/sq2.jpeg'
 import sq3 from '../assets/Program/sq3.jpeg'
 import sq4 from '../assets/Program/sq4.jpeg'
+import sq5 from '../assets/Program/sq5.png'
 
 const Swipper = () => {
   return (
@@ -22,6 +23,9 @@ const Swipper = () => {
         modules={[EffectCards, Autoplay]}
         className='mySwiper'
       >
+        <SwiperSlide>
+          <img src={sq5} alt='' />
+        </SwiperSlide>
         <SwiperSlide>
           <img src={sq1} alt='' />
         </SwiperSlide>

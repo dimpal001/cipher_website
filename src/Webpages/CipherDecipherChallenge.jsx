@@ -1,12 +1,14 @@
 import Img from '../assets/poster.svg'
-import sq1 from '../assets/Program/sq1.jpeg'
+import first from '../assets/Program/first.png'
+import second from '../assets/Program/second.png'
+import third from '../assets/Program/third.png'
 import Result from '../assets/result.svg'
 
 const CipherDecipherChallenge = () => {
   return (
     <div className='min-h-screen w-screen  text-gray-300 flex flex-col items-center p-4'>
-      <Poster />
-      {/* <ResultDeclaration /> */}
+      {/* <Poster /> */}
+      <ResultDeclaration />
     </div>
   )
 }
@@ -81,11 +83,11 @@ const ResultDeclaration = () => {
         </div>
       </div>
       <div className='p-6 lg:p-16 md:p-10'>
-        <img src={sq1} alt='' />
+        <img src={first} className='w-full' loading='lazy' alt='' />
         <div className='my-10 h-[1px] bg-first' />
-        <img src={sq1} alt='' />
+        <img src={second} className='w-full' loading='lazy' alt='' />
         <div className='my-10 h-[1px] bg-first' />
-        <img src={sq1} alt='' />
+        <img src={third} className='w-full' loading='lazy' alt='' />
       </div>
     </div>
   )

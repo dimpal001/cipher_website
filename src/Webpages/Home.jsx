@@ -35,15 +35,15 @@ const Home = () => {
               our latest events and news.
             </p>
             <Link to={'/cipher-decipher'}>
-              <button className='p-3 lg:py-4 px-6 max-md:mt-14 bg-gradient-to-r from-first to-blue-950 text-lg font-semibold rounded-full'>
+              {/* <button className='p-3 lg:py-4 px-6 max-md:mt-14 bg-gradient-to-r from-first to-blue-950 text-lg font-semibold rounded-full'>
                 CIPHER-DECIPHER Challenge
-              </button>
-              {/* <button
+              </button> */}
+              <button
                 type='button'
                 className='text-white max-md:mt-5 transition-all duration-500 rounded-full bg-gradient-to-r p-3 lg:py-4 px-6 from-purple-600 to-yellow-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-semibold text-lg text-center me-2 mb-2'
               >
                 CIPHER-DECIPHER Result
-              </button> */}
+              </button>
             </Link>
           </div>
           <img
