@@ -42,7 +42,7 @@ const Home = () => {
               <div className='buttons max-md:mt-5'>
                 <Link to={'/treasure-hunt'}>
                   <button className='btn-hover hover:scale-[1.05] color-7'>
-                    Register for Treaser Hunt
+                    Register for Treasure Hunt 2.0
                   </button>
                 </Link>
               </div>
