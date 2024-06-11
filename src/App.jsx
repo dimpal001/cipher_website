@@ -11,6 +11,8 @@ import { useEffect } from 'react'
 import Error from './Webpages/Error'
 import CipherDecipherChallenge from './Webpages/CipherDecipherChallenge'
 import Headroom from 'react-headroom'
+import TreasureHunt from './Webpages/TreasureHunt'
+import TreasureHuntSuccess from './Webpages/TreasureHuntSuccess'
 
 const App = () => {
   useEffect(() => {
@@ -33,6 +35,11 @@ const App = () => {
                 element={<CipherDecipherChallenge />}
               />
               <Route path='/committee' element={<Team />} />
+              <Route path='/treasure-hunt' element={<TreasureHunt />} />
+              <Route
+                path='/treasure-hunt/success/:id'
+                element={<TreasureHuntSuccess />}
+              />
               <Route path='/*' element={<Error />} />
             </Routes>
           </div>

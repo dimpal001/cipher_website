@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 
 const Team = () => {
+  document.title = 'Team - Cipher | NEHU'
   useEffect(() => {
     scrollTo({
       top: 0,

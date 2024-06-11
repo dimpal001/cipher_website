@@ -6,6 +6,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const Home = () => {
+  document.title = 'Cipher | NEHU'
   useEffect(() => {
     AOS.init()
   }, [])
@@ -38,12 +39,19 @@ const Home = () => {
               {/* <button className='p-3 lg:py-4 px-6 max-md:mt-14 bg-gradient-to-r from-first to-blue-950 text-lg font-semibold rounded-full'>
                 CIPHER-DECIPHER Challenge
               </button> */}
-              <button
+              <div className='buttons max-md:mt-5'>
+                <Link to={'/treasure-hunt'}>
+                  <button className='btn-hover hover:scale-[1.05] color-7'>
+                    Register for Treaser Hunt
+                  </button>
+                </Link>
+              </div>
+              {/* <button
                 type='button'
                 className='text-white max-md:mt-5 transition-all duration-500 rounded-full bg-gradient-to-r p-3 lg:py-4 px-6 from-purple-600 to-yellow-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-semibold text-lg text-center me-2 mb-2'
               >
                 CIPHER-DECIPHER Result
-              </button>
+              </button> */}
             </Link>
           </div>
           <img
