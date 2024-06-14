@@ -114,7 +114,27 @@ const TreasureHunt = () => {
           <img src={Poster} alt='Treasure Hunt Poster' className='w-full' />
         </div>
         <div className='flex justify-center'>
-          <form
+          <div className='flex flex-col justify-center items-center gap-2 max-md:gap-4 py-5'>
+            <p className='text-2x text-center font-extralight'>
+              <span className='font-extrabold text-first'>Thank you</span> to
+              everyone who registered.{' '}
+              <span className='text-orange-600'>
+                Registration is now closed
+              </span>
+              .
+            </p>
+            <p className='text-2x font-extralight text-center'>
+              We extend our best wishes to all the participants. We look forward
+              to seeing you on{' '}
+              <span className='font-extrabold text-first'>
+                Saturday, June 15th, 2024.
+              </span>
+            </p>
+            <p className='font-extralight text-center'>
+              Get ready for an exciting and challenging event!
+            </p>
+          </div>
+          {/* <form
             id='registration-form'
             className='w-full bg-zinc-900 p-8 shadow-md'
             onSubmit={handleSubmit}
@@ -339,7 +359,7 @@ const TreasureHunt = () => {
                 {isSending ? 'Please wait...' : 'Register Team'}
               </button>
             </div>
-          </form>
+          </form> */}
         </div>
       </div>
     </div>
