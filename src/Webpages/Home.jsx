@@ -146,7 +146,7 @@ const Home = () => {
               </p>
               <div>
                 <p className='text-lg font-semibold'>Call</p>
-                <p>+917250148414</p>
+                <p>+917455814271</p>
               </div>
               <div>
                 <p className='text-lg font-semibold'>Email</p>
