@@ -59,79 +59,109 @@ const Committee = [
   },
 
   {
-    name: 'Priyanshu Raj',
+    name: 'Mohammad Saqib',
     position: 'General Secretary',
     department: 'BTech IT 4th Year',
   },
   {
-    name: 'Bishal Pandey',
+    name: 'Abhi Nithaware',
     position: 'Asst. General Secretary',
     department: 'BTech IT 4th Year',
   },
   {
-    name: 'Dewan Ariful Hussain',
+    name: 'Raje Alom',
     position: 'Finance Secretary',
     department: 'BTech IT 4th Year',
   },
   {
-    name: 'Sintu Kumar Sharma',
+    name: 'Pyboyina Viswaja',
     position: 'Creative Secretary',
     department: 'BTech IT 4th Year',
   },
   {
-    name: 'Anupam Kumar Singh',
+    name: 'Ujjwal Kumar',
     position: 'Academic Secretary',
     department: 'BTech IT 4th Year',
   },
   {
-    name: 'San Jay Masih',
+    name: 'Palmsan A sangma',
     position: 'Outreach Secretary',
     department: 'BTech IT 4th Year',
   },
   {
-    name: 'Furkan Ali',
+    name: 'Bikash Barua',
     position: 'Publication Secretary',
     department: 'BTech IT 4th Year',
   },
   {
-    name: 'Abhi Nitnaware',
-    position: 'Asst. Finance Secretary',
-    department: 'BTech IT 3rd Year',
-  },
-  {
-    name: 'Abhishek Kumar Rai',
-    position: 'Asst. Academic Secretary',
-    department: 'BTech IT 3rd Year',
-  },
-  {
-    name: 'Mohammad Saqib',
-    position: 'Asst. Creative Secretary I',
-    department: 'BTech IT 3rd Year',
-  },
-  {
-    name: 'Pyboyina Viswaja',
-    position: 'Asst. Creative Secretary II',
-    department: 'BTech IT 3rd Year',
-  },
-  {
-    name: 'Nipu Kalita',
-    position: 'Asst. Outreach Secretary',
-    department: 'BTech IT 3rd Year',
-  },
-  {
-    name: 'Sanskar Kashyap',
-    position: 'Asst. Publication Sec',
-    department: 'BTech IT 3rd Year',
+    name: 'Ibapalei Shadap',
+    position: 'Database Coordinator Secretary',
+    department: 'BTech IT 4th Year',
   },
   {
     name: 'Liza Mehta',
     position: 'Executive Secretary',
+    department: 'BTech IT 4th Year',
+  },
+  {
+    name: 'Bimal Mochahary',
+    position: 'Asst. Finance Sec',
     department: 'BTech IT 3rd Year',
   },
   {
-    name: 'Bikash Barua',
-    position: 'Asst. Executive Sec',
+    name: 'Hansh Raj',
+    position: 'Asst. Academic Sec I',
     department: 'BTech IT 3rd Year',
+  },
+  {
+    name: 'Soumojit Bhuin',
+    position: 'Asst. Academic Sec II',
+    department: 'BTech IT 2nd Year',
+  },
+  {
+    name: 'Rehana Debbarma',
+    position: 'Asst. Creative Sec',
+    department: 'BTech IT 3rd Year',
+  },
+  {
+    name: 'Erisaca Vaichei',
+    position: 'Asst. Outreach Sec',
+    department: 'BTech IT 3rd Year',
+  },
+  {
+    name: 'Nabarup Daimary',
+    position: 'Asst. Publication Sec',
+    department: 'BTech IT 3rd Year',
+  },
+  {
+    name: 'Dibakar Patar',
+    position: 'Asst. Database Coordinator Sec',
+    department: 'BTech IT 3rd Year',
+  },
+  {
+    name: 'Sajeed Ahmed',
+    position: 'Asst. Executive Sec I',
+    department: 'BTech IT 3rd Year',
+  },
+  {
+    name: 'Nikunj Maheshwari',
+    position: 'Asst. Executive Sec II',
+    department: 'BTech IT 2nd Year',
+  },
+  {
+    name: 'Sourav Rabha',
+    position: 'Asst. Executive Sec III',
+    department: 'BTech IT 2nd Year',
+  },
+  {
+    name: 'Kumar Kartik',
+    position: 'Asst. Executive Sec IV',
+    department: 'BTech IT 2nd Year',
+  },
+  {
+    name: 'Drona Bopche',
+    position: 'Asst. Executive Sec V',
+    department: 'BTech IT 2nd Year',
   },
 ]
 
